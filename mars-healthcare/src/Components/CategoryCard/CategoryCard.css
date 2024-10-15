@@ -1,0 +1,51 @@
+.category-card {
+    width: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    transition: 0.5s ease;
+    overflow: hidden;
+  }
+  .category-heading{
+    /* background-color: white; */
+    margin-bottom: 2rem;
+    width: 250px;
+  }
+  .category-card figure{
+    width: 100%;
+  }
+  
+  .category-card figure img{
+    width: 100%;
+    aspect-ratio: 3/2;
+  }
+  
+  .enquire-now{
+    position: absolute;
+    background-color: blue;
+    color: white;
+    padding: 1rem;
+    display: none;
+    bottom: 50%;
+  }
+  .category-card:hover .enquire-now{
+    display: block;
+    transition: 0.5s ease;
+    animation: slideup 0.5s;
+  }
+  .category-card:hover figure img{
+    transform: scale(1.1);
+    transition: 0.5s ease;
+  }
+  
+  @keyframes slideup{
+    from{
+      bottom: 20%;
+    }
+    to{
+      bottom: 50%;
+    }
+  }
