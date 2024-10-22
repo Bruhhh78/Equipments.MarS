@@ -1,0 +1,77 @@
+.about-section{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 166, 255, 0.053);
+}
+
+.about-header h2{
+    font-size: 30px;
+}
+.about-container{
+    margin: 1.5rem;
+}
+.about-container p{
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.about-container p span{
+    font-weight: 800;
+}
+.about-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-card {
+    position: relative;
+    height: auto; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(0, 132, 255);   
+    flex-direction: column; 
+    padding: 20px;
+    width: 300px;
+    color: white;
+    height: 180px;
+    overflow: hidden;
+    margin-bottom: 20px; /* Adjust spacing between cards */
+}
+
+.about-card h2 {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+.about-card .card-desc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 18px;
+    color: white;
+    font-weight: 800;
+    width: 100%;
+    height: 100%;
+    text-align: left ;
+    background-color: orange; /* Set background color of the overlay */
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s; /* Add transition for smooth sliding */
+}
+
+.about-card:hover .card-desc {
+    transform: translateY(20%); /* Slide description from bottom to top */
+}
+
+.about-card:hover h2 {
+    color: transparent; /* Hide the heading text when hovered */
+}

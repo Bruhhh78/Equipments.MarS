@@ -1,0 +1,13 @@
+.footer-section{
+    background-color: rgba(27, 151, 204, 0.886);
+    width: 100%;
+    margin-top: 10rem;
+ }
+ .footer-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem;
+    color: white;
+ }

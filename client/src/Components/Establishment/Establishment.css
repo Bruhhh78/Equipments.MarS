@@ -1,0 +1,21 @@
+.establishment-section{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.establishment-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.establishment-container div{
+    border: 1px solid black;
+    padding: 2rem;
+    height: 180px;
+    width: 300px;
+}

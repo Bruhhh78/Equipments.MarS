@@ -1,0 +1,35 @@
+.brands-section{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+.brand-container{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.authorised-brands h2{
+    font-size: 30px;
+}
+.brand-img{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.brand-img img{
+    width: 150px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    padding: 10px;
+}
+.brand-img img:hover {
+    filter: grayscale(100%);
+    transition: 0.3s ease;
+}
